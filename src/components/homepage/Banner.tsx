@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Banner = () => {
@@ -28,7 +29,11 @@ const Banner = () => {
               genres.
             </p>
             <div className="mt-6 sm:mt-8">
-              <button className="btn btn-success bg-[#23BE0A] px-8">View The List</button>
+              <Link href="/books">
+                <button className="btn btn-success bg-[#23BE0A] px-8">
+                  View The List
+                </button>
+              </Link>
             </div>
           </div>
         </div>

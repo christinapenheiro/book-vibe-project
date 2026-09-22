@@ -62,6 +62,28 @@ export default function BookCard({ book }: BookCardProps) {
             </>
           )}
         </div>
+        <div className="card-actions pt-3 border-base-200">
+          <button
+            type="button"
+            className="btn btn-primary w-full gap-2 text-sm font-medium shadow-xs hover:shadow-md active:scale-[0.98] transition-all duration-200"
+          >
+            <span>View Details</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   );
