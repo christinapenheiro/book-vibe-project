@@ -1,3 +1,4 @@
+import ReadButton from "@/components/bookDetails/readButton";
 import type IBooks from "@/types/type";
 import Image from "next/image";
 
@@ -124,10 +125,7 @@ const BookCardPage = async({ params }: PageProps) => {
                 {/* Action Buttons */}{" "}
                 <div className="flex gap-3 mt-8">
                   {" "}
-                  <button className="btn btn-primary flex-1">
-                    {" "}
-                    Read Now{" "}
-                  </button>{" "}
+                  <ReadButton book={book}></ReadButton>
                   <button className="btn btn-outline flex-1">
                     {" "}
                     Add to Wishlist{" "}
